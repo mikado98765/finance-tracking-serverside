@@ -3,7 +3,7 @@ requires = ["setuptools>=64.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "insta485"
+name = "finance"
 version = "1.0.0"
 dependencies = [
     "arrow",
@@ -17,10 +17,10 @@ dependencies = [
     "pytest-mock",
     "requests",
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.8"
 
 [tool.setuptools]
-packages = ["insta485"]
+packages = ["finance"]
 
 [tool.pylint."messages control"]
 disable = ["cyclic-import"]
