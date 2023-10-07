@@ -1,0 +1,13 @@
+#!/bin/bash
+# financerun
+
+# Stop on errors
+# See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+set -Eeuo pipefail
+
+if [ -e  "${PWD}/var/finance.sqlite3" ]
+then
+    flask --app finance --debug run --host 0.0.0.0 --port 8000
+else
+    echo "Error: can't find db, try running ./bin/financedb create"
+fi
