@@ -1,4 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-Hello world!
+    <body>
+        <h1>Total Balance: {{balance}}</h1>
+        <h2>Transactions</h2>
+        {% for trn in trnz %}
+        <p>{{trn.id}} : {{trn.amount}}</p>
+        {% endfor %}
+      </body>
 </html>
