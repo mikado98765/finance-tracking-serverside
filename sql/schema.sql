@@ -12,18 +12,18 @@ CREATE TABLE transactions(
 
 CREATE TABLE payments(
     id INT NOT NULL,
-    name VARCHAR(20)
+    name VARCHAR(20),
     PRIMARY KEY(id)
 );
 
 CREATE TABLE purchase_types(
     id INT NOT NULL,
-    name VARCHAR(20)
+    name VARCHAR(20),
     PRIMARY KEY(id)
 );
 
 CREATE TABLE companies(
     id INT NOT NULL,
-    name VARCHAR(20)
+    name VARCHAR(20),
     PRIMARY KEY(id)
 );
